@@ -19,6 +19,3 @@ EXPOSE 8080
 
 # Define environment variable
 ENV DJANGO_SETTINGS_MODULE=events_test.settings
-
-# Run daphne when the container launches
-CMD ["daphne", "-b", "0.0.0.0", "-p", "8080", "events_test.asgi:application"]
